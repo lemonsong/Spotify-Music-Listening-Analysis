@@ -1,0 +1,95 @@
+/* First Section: Qlik Style */
+
+/**
+* set padding to make room for bootstrap menu
+*
+*/
+html,body { }  
+body {
+    height: auto; 
+    touch-action: auto;
+    /*padding-bottom: 30px;*/
+    font-family: 'Amaranth', sans-serif !important;
+    font-weight:400,700;
+    color: #281B0E;
+}
+
+/*
+* need to set the height for objects
+* set top padding to make room for selection toolbar
+*/
+div.qvobject, div.qvplaceholder {
+    padding: 30px 10px 10px 10px;
+    height: 400px;
+}
+
+.qcmd {
+    cursor: pointer;
+}
+
+#popup {
+    background-color: #7f8c8d;
+    color: #FFFFFF;
+    position: fixed;
+    padding: 10px;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    display: none;
+    border-radius: 5px;
+}
+
+/*
+* Overrides Bootstrap navbar z-index to avoid conflict with selections bar
+.navbar-fixed-top {
+position: relative;
+z-index: 1;
+}*/
+
+
+/* Qlik KPI text: this class created by Qlik App 
+.ellips-text{
+    font-family: 'Amaranth', sans-serif !important;
+}*/
+
+/* Title of chart */
+h1 > span.ng-scope.ng-binding{
+    font-family: 'Amaranth', sans-serif !important;
+    font-size: 20px;
+    font-weight:700;
+} 
+
+/* Second Section: Web Style*/
+/* Section title */
+
+p, ul{
+    text-align:left;
+}
+
+.titles {
+    border-bottom: #FC764A solid 3px;
+    padding-bottom: 7px;
+    margin-bottom: 9px;
+    margin-top: 55px;
+}
+span.topic {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: left !important;
+    color: #281B0E;
+}
+
+.chart-row{
+    padding-top:30px;
+}
+
+.kpi-text{
+    font-size : 24px;
+    color:#281B0E;
+}
+.kpi-qlik-text{
+    font-size : 20px;
+}
